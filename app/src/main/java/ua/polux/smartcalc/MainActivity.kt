@@ -1,4 +1,4 @@
-package com.vitaliy.smartcalc
+package ua.polux.smartcalc
 
 import android.Manifest
 import android.content.pm.PackageManager
@@ -6,6 +6,7 @@ import android.net.Uri
 import android.os.Bundle
 import android.widget.Toast
 import androidx.activity.ComponentActivity
+import androidx.activity.compose.setContent
 import androidx.activity.compose.rememberLauncherForActivityResult
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.compose.foundation.background
@@ -240,7 +241,7 @@ fun SmartCalcApp() {
 }
 
 @Composable
-fun ActionButton(icon: androidx.compose.ui.graphics.vector.ImageVector, text: String, onClick: () -> Unit) {
+fun androidx.compose.foundation.layout.RowScope.ActionButton(icon: androidx.compose.ui.graphics.vector.ImageVector, text: String, onClick: () -> Unit) {
     FilledTonalButton(onClick = onClick, modifier = Modifier.weight(1f)) {
         Icon(icon, null)
         Spacer(Modifier.width(4.dp))
