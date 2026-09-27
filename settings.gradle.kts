@@ -14,5 +14,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "SmartCalc"
+rootProject.name = "Smart-Calculator"
 include(":app")
