@@ -1,4 +1,4 @@
-package com.vitaliy.smartcalc
+package ua.polux.smartcalc
 
 object OcrMath {
     fun clean(text: String): String {
